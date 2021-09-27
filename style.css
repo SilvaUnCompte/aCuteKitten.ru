@@ -1,0 +1,99 @@
+header {
+	background-image: linear-gradient(to bottom, rgba(204, 107, 107) -10%, rgba(0, 0, 0, 0) 100%);
+	text-align: center;
+	padding: 0.5rem 0 5rem;
+	font-size: 1.25rem;
+	position: sticky;
+	top: 0px;
+}
+	
+body {
+	margin: 0;
+	text-align: center;
+	background-color:pink;
+	transition: background 5s;
+	width:100%;
+}
+
+footer {
+	background-image: linear-gradient(to top, rgb(204, 107, 107) -10%, rgba(0, 0, 0, 0) 100%);
+	width: 100%;
+	height: 8.5%;
+	padding: 0.5rem 0 5rem;
+	font-size: 1.25rem;
+	position: sticky;
+	bottom: 0px;
+}
+
+
+
+
+
+
+
+table {
+	opacity: 1;
+	text-align: center;
+}
+
+label {
+	text-shadow: 2px 3px 5px;
+	font-size: 35px;
+	text-align: center;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: -webkit-inline-box;
+  display: inline-flex;
+}
+
+h1,h2 {
+	margin-left: 4%;
+	margin-right: 4%;
+}
+
+
+
+
+
+.fond-up{
+	background-color: rgba(255, 255, 255, 0.7);
+	box-shadow: 5px 3px 5px;
+	margin: 5%;
+}
+
+.menu {
+  position: relative;
+  padding: 1rem 0 0.5rem;
+  margin: 0 1.5rem;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.menu::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  -webkit-transform: translateX(-50%) scaleX(0);
+          transform: translateX(-50%) scaleX(0);
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  width: 100%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.8);
+  -webkit-transition: -webkit-transform 250ms;
+  transition: -webkit-transform 250ms;
+  transition: transform 250ms;
+  transition: transform 250ms, -webkit-transform 250ms;
+}
+.menu:hover::after {
+  -webkit-transform: translateX(-50%) scaleX(1);
+          transform: translateX(-50%) scaleX(1);
+}
